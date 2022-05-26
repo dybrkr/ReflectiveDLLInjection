@@ -49,12 +49,12 @@ int main( int argc, char * argv[] )
 	TOKEN_PRIVILEGES priv = {0};
 
 #ifdef WIN_X64
-	char * cpDllFile  = "reflective_dll.x64.dll";
+	char * cpDllFile  = "overlay.dll";
 #else
 #ifdef WIN_X86
-	char * cpDllFile  = "reflective_dll.dll";
+	char * cpDllFile  = "overlay.dll";
 #else WIN_ARM
-	char * cpDllFile  = "reflective_dll.arm.dll";
+	char * cpDllFile  = "overlay.dll";
 #endif
 #endif
 
